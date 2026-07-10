@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conditions Générales d'Utilisation — Log-In</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0913; --panel:#141020; --panel-2:#1A1530; --line:#2A2344; --line-soft:rgba(255,255,255,.05);
+  --ink:#ECE8F6; --ink-dim:#A79FC2; --ink-faint:#6C6690;
+  --rose:#E8A6C6; --peri:#93A4F4;
+  --font-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --font-ui:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+body{background:radial-gradient(1100px 560px at 70% -10%, #191131, var(--bg)) fixed;color:var(--ink);
+  font-family:var(--font-ui);line-height:1.6;-webkit-font-smoothing:antialiased;margin:0}
+.doc{max-width:768px;margin:0 auto;padding:40px 24px 60px}
+a{color:var(--peri)}
+
+.head{text-align:center;padding:16px 0 34px;border-bottom:1px solid var(--line);margin-bottom:34px}
+.kicker{display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);
+  border:1px solid var(--line-soft);background:var(--panel);padding:5px 12px;border-radius:999px;margin-bottom:18px}
+.head h1{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,5vw,42px);color:var(--ink);
+  margin:0 0 8px;letter-spacing:-.02em}
+.head .st{color:var(--ink-dim);font-size:15px;margin:0}
+.head .date{color:var(--ink-faint);font-size:13px;margin-top:14px}
+
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:0 0 34px}
+.toc h2{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px;font-weight:600}
+.toc ol{margin:0;padding-left:20px;columns:2;column-gap:30px}
+.toc li{margin:4px 0}
+.toc a{color:var(--ink-dim);text-decoration:none;font-size:14px}
+.toc a:hover{color:var(--rose)}
+@media(max-width:600px){.toc ol{columns:1}}
+
+.lead{color:var(--ink-dim);font-size:15px;line-height:1.75;margin:0 0 8px}
+h2.sec{font-family:var(--font-display);font-weight:600;font-size:22px;color:var(--ink);margin:38px 0 12px;
+  letter-spacing:-.01em;scroll-margin-top:20px;display:flex;gap:12px;align-items:baseline}
+h2.sec .n{font-size:14px;color:var(--rose);font-family:var(--font-ui);font-weight:700;flex:none}
+h3{font-size:15px;font-weight:600;color:var(--ink);margin:22px 0 6px}
+p{color:var(--ink-dim);margin:0 0 12px;font-size:15px;line-height:1.75}
+ul,ol.list{color:var(--ink-dim);margin:0 0 12px;padding-left:22px;font-size:15px;line-height:1.75}
+li{margin:5px 0}
+strong{color:var(--ink)}
+.fill{background:rgba(232,166,198,.16);border:1px dashed rgba(232,166,198,.55);color:var(--rose);
+  padding:0 6px;border-radius:5px;font-size:.94em;white-space:nowrap}
+
+.foot{margin-top:48px;border-top:1px solid var(--line);padding-top:24px;color:var(--ink-faint);font-size:13px;text-align:center}
+.foot a{text-decoration:none}.foot a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<main class="doc">
+  <header class="head">
+    <span class="kicker">Document officiel</span>
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p class="st"><strong>Log-In</strong> — bot d'administration du serveur Discord « Retour sur Atlanta »</p>
+    <p class="date">Version en vigueur au 10 juillet 2026</p>
+  </header>
+
+  <nav class="toc">
+    <h2>Sommaire</h2>
+    <ol>
+      <li><a href="#s1">Objet</a></li>
+      <li><a href="#s2">Description du service</a></li>
+      <li><a href="#s3">Accès et conditions</a></li>
+      <li><a href="#s4">Utilisation acceptable</a></li>
+      <li><a href="#s5">Propriété intellectuelle</a></li>
+      <li><a href="#s6">Contenus des utilisateurs</a></li>
+      <li><a href="#s7">Données personnelles</a></li>
+      <li><a href="#s8">Responsabilité</a></li>
+      <li><a href="#s9">Suspension et résiliation</a></li>
+      <li><a href="#s10">Modification des conditions</a></li>
+      <li><a href="#s11">Droit applicable</a></li>
+      <li><a href="#s12">Contact</a></li>
+    </ol>
+  </nav>
+
+  <p class="lead">Les présentes Conditions Générales d'Utilisation (ci-après les « Conditions ») encadrent l'accès au bot <strong>Log-In</strong> et son utilisation sur le serveur Discord « Retour sur Atlanta » (ci-après le « Service »). En ajoutant, en configurant ou en utilisant le Service, vous reconnaissez avoir lu, compris et accepté sans réserve les présentes Conditions. Si vous ne les acceptez pas, vous devez cesser d'utiliser le Service.</p>
+
+  <h2 class="sec" id="s1"><span class="n">1</span>Objet</h2>
+  <p>Les Conditions définissent les règles d'accès et d'utilisation du Service. Elles s'appliquent à toute personne qui utilise le Service ou en administre les fonctionnalités, quelle que soit la manière dont elle y accède.</p>
+
+  <h2 class="sec" id="s2"><span class="n">2</span>Description du service</h2>
+  <p>Log-In est un outil d'administration permettant de gérer un serveur Discord : consultation des membres, modération (exclusion, expulsion, bannissement), gestion des salons et des rôles, et envoi de messages à la demande de l'administrateur. Le Service s'appuie sur l'interface de programmation (API) officielle de Discord et est fourni « en l'état », selon les fonctionnalités disponibles à un instant donné.</p>
+
+  <h2 class="sec" id="s3"><span class="n">3</span>Accès et conditions d'utilisation</h2>
+  <p>L'utilisation du Service suppose de disposer d'un compte Discord valide et de respecter les Conditions d'utilisation ainsi que les Règles de la communauté de Discord. L'accès aux fonctions d'administration est réservé aux personnes autorisées par l'administrateur du serveur. Vous êtes responsable de la confidentialité de vos accès et des actions réalisées au moyen de ceux-ci.</p>
+
+  <h2 class="sec" id="s4"><span class="n">4</span>Utilisation acceptable</h2>
+  <p>Vous vous engagez à utiliser le Service de manière loyale et conforme à la loi. Sont notamment interdits :</p>
+  <ul>
+    <li>tout usage illicite, frauduleux ou portant atteinte aux droits d'un tiers ;</li>
+    <li>le harcèlement, la diffusion de contenus haineux, violents ou illicites ;</li>
+    <li>l'envoi de messages non sollicités en masse (spam) ;</li>
+    <li>toute tentative de contourner, perturber ou compromettre la sécurité ou le bon fonctionnement du Service ;</li>
+    <li>l'exploitation automatisée ou détournée des fonctionnalités en dehors de leur usage prévu.</li>
+  </ul>
+
+  <h2 class="sec" id="s5"><span class="n">5</span>Propriété intellectuelle</h2>
+  <p>La présente section constitue le règlement de propriété intellectuelle applicable au Service.</p>
+
+  <h3>5.1 &nbsp;Titularité des droits</h3>
+  <p>Le Service, pris dans son ensemble et dans chacune de ses composantes — incluant notamment son code source, son architecture logicielle, son interface, ses textes, sa charte graphique, ses éléments visuels, son nom et son logo — est protégé par le droit de la propriété intellectuelle. Il demeure la propriété exclusive de l'éditeur, <span class="fill">[Nom ou pseudo de l'éditeur]</span>, ou de ses éventuels concédants. Aucune disposition des présentes ne saurait être interprétée comme un transfert de propriété au bénéfice de l'utilisateur.</p>
+
+  <h3>5.2 &nbsp;Licence d'utilisation</h3>
+  <p>Sous réserve du respect intégral des présentes Conditions, l'éditeur concède à l'utilisateur un droit d'utilisation <strong>personnel, non exclusif, non transférable et révocable</strong>, strictement limité à l'usage du Service pour ses fonctionnalités prévues. Cette licence ne confère aucun autre droit que ceux expressément accordés.</p>
+
+  <h3>5.3 &nbsp;Restrictions</h3>
+  <p>Sauf autorisation écrite et préalable de l'éditeur, l'utilisateur s'interdit de :</p>
+  <ul>
+    <li>copier, reproduire, distribuer, publier, vendre, louer ou sous-licencier tout ou partie du Service ;</li>
+    <li>modifier, adapter, traduire ou créer des œuvres dérivées à partir du Service ;</li>
+    <li>procéder à une ingénierie inverse, décompiler ou désassembler le code, hormis dans les limites strictement autorisées par la loi ;</li>
+    <li>supprimer, masquer ou altérer les mentions de propriété ou de droits ;</li>
+    <li>utiliser le nom, le logo ou les autres signes distinctifs de l'éditeur sans autorisation.</li>
+  </ul>
+
+  <h3>5.4 &nbsp;Marques et signes distinctifs</h3>
+  <p>Le nom « Log-In », le logo et les autres signes distinctifs associés au Service sont des signes protégés. Toute utilisation, reproduction ou imitation non autorisée est interdite et susceptible d'engager la responsabilité de son auteur.</p>
+
+  <h3>5.5 &nbsp;Composants tiers et logiciels libres</h3>
+  <p>Le Service peut intégrer des bibliothèques ou composants de tiers, y compris des logiciels libres (open source), régis par leurs propres licences. Ces licences prévalent pour les composants concernés. « Discord » et les marques associées sont la propriété de Discord Inc. ; le Service n'est ni affilié, ni sponsorisé, ni approuvé par Discord Inc.</p>
+
+  <h3>5.6 &nbsp;Retours et suggestions</h3>
+  <p>Toute suggestion, idée ou retour que vous communiquez au sujet du Service peut être librement utilisé par l'éditeur pour l'améliorer, sans contrepartie ni obligation d'attribution.</p>
+
+  <h3>5.7 &nbsp;Signalement d'atteinte aux droits</h3>
+  <p>Toute personne estimant qu'un élément du Service porte atteinte à ses droits de propriété intellectuelle peut adresser une notification à <span class="fill">[moyen de contact — ex. adresse e-mail]</span>, en précisant le droit invoqué, l'élément concerné et les justificatifs utiles. L'éditeur s'engage à examiner toute demande sérieuse dans un délai raisonnable.</p>
+
+  <h3>5.8 &nbsp;Réserve de droits</h3>
+  <p>Tous les droits qui ne sont pas expressément concédés par les présentes Conditions demeurent réservés à l'éditeur.</p>
+
+  <h2 class="sec" id="s6"><span class="n">6</span>Contenus des utilisateurs</h2>
+  <p>Les messages et contenus publiés par les membres sur le serveur ou au moyen du Service demeurent la propriété de leurs auteurs. L'éditeur ne revendique aucun droit sur ces contenus au-delà de ce qui est nécessaire au fonctionnement du Service. En publiant un contenu, vous garantissez disposer des droits nécessaires et assumez seul la responsabilité de sa légalité.</p>
+
+  <h2 class="sec" id="s7"><span class="n">7</span>Données personnelles</h2>
+  <p>Le traitement des données dans le cadre du Service est décrit dans la <a href="privacy.html">Politique de Confidentialité</a>, qui fait partie intégrante des présentes Conditions.</p>
+
+  <h2 class="sec" id="s8"><span class="n">8</span>Disponibilité et responsabilité</h2>
+  <p>Le Service est fourni « en l'état », sans garantie de disponibilité, de continuité ou d'absence d'erreur. L'éditeur ne saurait être tenu responsable des interruptions, indisponibilités, pertes de données ou dommages indirects résultant de l'utilisation ou de l'impossibilité d'utiliser le Service. L'utilisateur demeure seul responsable des actions d'administration qu'il exécute (notamment les exclusions, expulsions, bannissements et suppressions).</p>
+
+  <h2 class="sec" id="s9"><span class="n">9</span>Suspension et résiliation</h2>
+  <p>L'éditeur peut suspendre ou retirer l'accès au Service, à tout moment et sans préavis, en cas de manquement aux présentes Conditions ou d'usage susceptible de nuire au Service, à ses utilisateurs ou à des tiers.</p>
+
+  <h2 class="sec" id="s10"><span class="n">10</span>Modification des conditions</h2>
+  <p>Les présentes Conditions peuvent être modifiées à tout moment. La version applicable est celle publiée à la présente adresse au moment de l'utilisation du Service. Il vous appartient de la consulter régulièrement.</p>
+
+  <h2 class="sec" id="s11"><span class="n">11</span>Droit applicable et litiges</h2>
+  <p>Les présentes Conditions sont régies par le droit français. En cas de différend, les parties s'efforceront de trouver une solution amiable avant toute action. À défaut d'accord, le litige sera porté devant les juridictions compétentes conformément aux règles de droit applicables.</p>
+
+  <h2 class="sec" id="s12"><span class="n">12</span>Contact</h2>
+  <p>Éditeur : <span class="fill">[Nom ou pseudo de l'éditeur]</span> — Contact : <span class="fill">[moyen de contact — ex. adresse e-mail]</span>.</p>
+
+  <footer class="foot">
+    <p>© 2026 <span class="fill">[Nom ou pseudo de l'éditeur]</span> — Tous droits réservés.<br>
+    Voir aussi la <a href="privacy.html">Politique de Confidentialité</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
